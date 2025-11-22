@@ -1,17 +1,58 @@
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2'); 
+}
+
 /* Контейнери */
 :root {
    --color-brand-light: #819B57;
    --color-brand-dark: #465929;
    --color-primary-dark: #31261A;
    --color-primary-light: #FAF4EA;  
+   --color-secondary: #A18268;
 }
 
 /* Base styles */
 body{
     color: var(--color-primary-dark);
+    font-family: 'Popping', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
 }
 ul {
     list-style-type: none;
+}
+address {
+    font-style: normal;
 }
 
 /* Button styles */
@@ -20,6 +61,7 @@ ul {
     background-color: var(--color-brand-light);
     border: 2px solid var(--color-brand-light);
     border-radius: 8px;
+    font-weight: 600;
 }
 
 .button:hover {
@@ -30,28 +72,89 @@ ul {
 /* Links */
 .link {
     color: var(--color-primary-light);
+    text-decoration: none;
 }
 
 .link:hover {
     color: var(--color-brand-light);
+    font-weight: 600;
 }
 
 /* Hero title */
 .hero-title {
     color: var(--color-primary-light);
+    font-weight: 900;
+    font-size: 128px;
+    text-align: center;
 }
 
 .accent {
     color: var(--color-brand-light);
+    font-weight: 600;
 }
 
 /* Advantages list */
 .advantages-list {
     color: var(--color-primary-light);
     background-color: var(--color-brand-light);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
 }
 
 /* Titles */
 .section-title {
     color: var(--color-primary-dark);
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.3;
+}
+
+
+/* Traditions section */
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Chefs section */
+.section-title .accent{
+    color: var(--color-brand-dark);
+}
+.chef-title {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+/* Formats sections */
+.format-title {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-primary-light);
+}
+.format-text {
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--color-primary-light);
+}
+
+/* Contacts section */
+.contacts-text {
+    color: var(--color-brand-dark);
+}
+
+/* Footer */
+.address-link {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--color-primary-light);
+    text-decoration: none;
+}
+
+.address-link:hover{
+    color: var(--color-brand-light);
+}
+
+.address-copyright {
+    font-size: 14px;
+    color: var(--color-secondary);
 }
